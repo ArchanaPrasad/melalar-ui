@@ -1,0 +1,32 @@
+
+.board-wrapper {
+    margin-top:20px;
+    width:100%;
+    background-color: #ffffff;
+    display:flex;
+    justify-content: center;
+}
+
+
+.react-kanban-column {
+    padding:0px !important;
+    border-radius:2px !important;
+    background-color:#eee !important;
+    margin:5px !important;
+    border-radius: 12px !important; 
+}
+
+.react-kanban-card{
+    margin-left:7px;
+    margin-right:7px;
+    box-sizing: border-box;
+    max-width: 250px;
+    min-width: 250px;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 7px;
+    border-radius: 12px;
+    /* background-color: maroon; */
+    
+}

@@ -1,0 +1,13 @@
+
+.header {
+    /* font-family: ui-rounded; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left:2%;
+    /* background-color: #eeeeee; */
+    background-color: #17a2b8;
+    color:#eee;
+    margin-top:0px;
+    min-height: 80px;
+}

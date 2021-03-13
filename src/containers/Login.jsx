@@ -37,8 +37,12 @@ class Login extends React.Component{
                 username: this.state.username,
                 password: this.state.password
             }).then(
-                (response) => {console.log(response);},
-                (error) => {console.log(error);}
+                (response) => {
+                  window.location="/users";
+                },
+                (error) => {
+                  console.log(error);
+                }
             );
         }  else {
             console.log("error");

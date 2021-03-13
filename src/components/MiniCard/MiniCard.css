@@ -1,0 +1,17 @@
+
+
+.board-minicard-heading {
+    font-weight: bold;
+}
+
+.board-minicard-line{
+    margin-top:5px;
+}
+
+.board-minicard-company-logo {
+    max-width: 30px;
+    max-height: 30px;
+    margin-left:5px;
+    margin-right:10px;
+    border-radius:50%;
+}
