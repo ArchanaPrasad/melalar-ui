@@ -5,6 +5,8 @@ import "../containerStyles/Login.css";
 
 import axios from 'axios';
 
+// export var isAuthenticated = false;
+
 class Login extends React.Component{
 
     constructor(props){
@@ -33,18 +35,26 @@ class Login extends React.Component{
     handleSubmit(event){
         if(this.validateForm()){
             console.log("submit");
-            axios.post('/login', {
-                username: this.state.username,
-                password: this.state.password
-            }).then(
-                (response) => {
-                  window.location="/users";
-                },
-                (error) => {
-                  console.log(error);
-                }
-            );
-        }  else {
+            console.log(this.state.username+ " " + this.state.password);
+            axios({
+              method:'post',
+              url:'/login',
+              params:{
+                     username: this.state.username,
+                     password: this.state.password
+                 },
+              config: { headers: {'Content-Type': 'application/x-www-form-urlencoded'}}
+             })
+             .then(
+                  (response) => {
+                    localStorage.setItem("isAuthenticated", "true");
+                    window.location="/dashboard"
+                  },
+                  (error) => {
+                    console.log(error);
+                  }
+              );  
+          }  else {
             console.log("error");
         }
     }
