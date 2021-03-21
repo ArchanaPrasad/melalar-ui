@@ -104,6 +104,7 @@ class BoardWrapper extends Component {
 
     openAddJobApplicationModal = (jobStatusId) => {
         
+        console.log('here');
         let jobStatus = {}
         this.state.jobStatuses.map((item) => {
             if(item.statusId == jobStatusId) {

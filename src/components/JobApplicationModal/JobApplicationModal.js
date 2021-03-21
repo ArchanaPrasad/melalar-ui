@@ -3,8 +3,8 @@ import React from "react";
 import './JobApplicationModal.css'
 
 const Modal = (props) => {
-    const showHideClassName = props.show ? "modal" : "modal d-none";
-
+    const showHideClassName = props.show ? "modal d-flex" : "modal d-none";
+    console.log(showHideClassName);
     if(props.show) {
         return (
             <div className={showHideClassName}>
@@ -26,10 +26,10 @@ const Modal = (props) => {
                                 <input type="text" className="modal-input" id="addAppAppliedDate" placeholder="Applied Date" size="30" required/>    
                             </div>
                             <div>
-                                <input type="text" className="modal-input" id="addAppAppliedDate" placeholder="Application Tracking System" size="30" required/>    
+                                <input type="text" className="modal-input" id="ats" placeholder="Application Tracking System" size="30" required/>    
                             </div>
                             <div>
-                                <textarea type="textarea" className="modal-input" id="addAppAppliedDate" placeholder="Notes" cols="29" rows="5" required/>    
+                                <textarea type="textarea" className="modal-input" id="nots" placeholder="Notes" cols="29" rows="5" required/>    
                             </div>
                             {/* <div>
                                 <input type="file" className="modal-input" class="form-control" id="customFile" />
@@ -40,10 +40,10 @@ const Modal = (props) => {
                         </div>
                         <div className="modal-flex-item">
                             <div>
-                                <input type="text" className="modal-input" id="addAppAppliedDate" placeholder="jobTitle" size="30" required/>    
+                                <input type="text" className="modal-input" id="jobTitle" placeholder="jobTitle" size="30" required/>    
                             </div>
                             <div>
-                                <textarea type="textarea" className="modal-input" id="addAppAppliedDate" placeholder="Description" cols="29" rows="10" required/>    
+                                <textarea type="textarea" className="modal-input" id="description" placeholder="Description" cols="29" rows="10" required/>    
                             </div>
                         </div>
 

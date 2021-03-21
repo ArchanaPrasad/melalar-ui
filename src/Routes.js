@@ -10,7 +10,7 @@ export default function Routes() {
     console.log("coming here");
     console.log(localStorage.getItem("isAuthenticated"));
     var isAuthenticated = localStorage.getItem("isAuthenticated");
-    if (isAuthenticated == "false") {
+    if (isAuthenticated != "true") {
       return <Redirect to="/login" />;
     }
     return children;
