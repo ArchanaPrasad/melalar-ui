@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
-import Login from "./containers/Login.jsx";
+// import Login from "./containers/Login.jsx";
+import Login from "./components/Login/Login"
 // import isAuthenticated from "./containers/Login.jsx";
 import BoardWrapper from "./components/BoardWrapper/BoardWrapper.js";
 
