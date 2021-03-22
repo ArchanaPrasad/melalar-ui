@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Login.css";
-import Configurations from "../../Configurations"
 
 import axios from 'axios';
 
@@ -39,7 +38,7 @@ class Login extends React.Component{
             console.log(this.state.username+ " " + this.state.password);
             axios({
               method:'post',
-              url: Configurations.SERVER_DOMAIN + '/login',
+              url: '/login',
               params:{
                      username: this.state.username,
                      password: this.state.password
